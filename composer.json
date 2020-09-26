@@ -1,6 +1,6 @@
 {
     "name": "jlorente/laravel-credit-cards",
-    "description": "Laravel >=5.6 integration for the PHP Credit Cards package.",
+    "description": "Laravel >=5.6 integration for the PHP Credit Cards package that allows to perform operations on debit and credit cards like format, validate brand, number and Luhn algorithm.",
     "keywords": [
         "php",
         "jlorente",

@@ -1,7 +1,11 @@
 Laravel Credit Cards
 ====================
 
-Laravel integration of the [PHP Credit Cards package](https://github.com/jlorente/php-credit-cards).
+Laravel >=5.6 integration for the [PHP Credit Cards package](https://github.com/jlorente/php-credit-cards) 
+that allows to perform operations on debit and credit cards like format, validate 
+brand, number and Luhn algorithm.
+
+It validates popular brands like Visa, Mastercard, American Express, etc.
 
 ## Installation
 
