@@ -51,7 +51,7 @@ return [
     //other stuff
     'aliases' => [
         //other stuff
-        'PayU' => \Jlorente\Laravel\CreditCards\Facades\CreditCardValidator::class,
+        'CreditCardValidator' => \Jlorente\Laravel\CreditCards\Facades\CreditCardValidator::class,
     ];
 ];
 ```
