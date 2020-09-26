@@ -48,7 +48,7 @@ class CreditCardsServiceProvider extends ServiceProvider implements DeferrablePr
         $this->loadTranslationsFrom(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR . 'lang', 'credit_cards');
 
         $this->publishes([
-            __DIR__ . '/config/credit_cards.php' => config_path('credit_cards.php'),
+            __DIR__ . '/config/credit-cards.php' => config_path('credit-cards.php'),
         ]);
 
         Validator::extend('credit_card', function ($attribute, $value, $parameters, $validator) {
@@ -89,7 +89,7 @@ class CreditCardsServiceProvider extends ServiceProvider implements DeferrablePr
     protected function registerCreditCards()
     {
         $this->app->singleton('credit_card_validator', function ($app) {
-            $config = $app['config']->get('credit_cards');
+            $config = $app['config']->get('credit-cards');
             return new CreditCardValidator($config['allowed_cards']);
         });
 
