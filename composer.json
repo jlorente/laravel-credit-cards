@@ -1,0 +1,49 @@
+{
+    "name": "jlorente/laravel-credit-cards",
+    "description": "Laravel >=5.6 integration for the PHP Credit Cards package.",
+    "keywords": [
+        "php",
+        "jlorente",
+        "laravel",
+        "creditcard",
+        "creditcards",
+        "debit",
+        "card",
+        "cards",
+        "validate",
+        "visa",
+        "mastercard",
+        "american express",
+        "discover",
+        "diners club",
+        "unionpay"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "José Lorente",
+            "email": "jose.lorente.martin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": ">=5.6",
+        "jlorente/php-credit-cards": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jlorente\\Laravel\\CreditCards\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jlorente\\Laravel\\CreditCards\\CreditCardsServiceProvider"
+            ],
+            "aliases": {
+                "PayU": "Jlorente\\Laravel\\CreditCards\\Facades\\CreditCard"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
