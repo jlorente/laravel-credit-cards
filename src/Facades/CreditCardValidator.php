@@ -24,6 +24,7 @@ use Jlorente\CreditCards\CreditCardTypeConfig;
 
 /**
  * @method static CreditCardTypeConfig|null getType(string $cardNumber)
+ * @method static CreditCardTypeConfig[] getTypesInfo()
  * @method static bool isValid(string $cardNumber)
  * @method static bool is(string $cardType, string $cardNumber)
  * @method static array getAllowedTypesList()
